@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import Button from './components/Button';
+import Questions from './components/Questions';
 
 function App() {
+  const [questions, setQuestions] = useState([
+    {
+      id: 0,
+      text: 'What am I doing?',
+      askedBy: 'JB',
+    },
+    {
+      id: 1,
+      text: 'Is there anybody in here?',
+      askedBy: 'Samus',
+    },
+  ]);
+
+  // delete question
+  const deleteQuestion = (id) => {
+    console.log('delete', id);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Header />
+      <Questions questions={questions} onDelete={deleteQuestion} />
+      <Button text='Add' color='#4477AA' />
     </div>
   );
 }
