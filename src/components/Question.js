@@ -15,11 +15,12 @@ const Question = ({ question, onDelete }) => {
   return (
     <div className='question'>
       <h3>
-        <div>Q:</div>
-        {question.text}
-        <FaTimes css={redHoverOrFocus} onClick={onDelete} />
+        Q: {question.text}
+        <FaTimes css={redHoverOrFocus} onClick={() => onDelete(question.id)} />
       </h3>
-      <p>Asked By: {question.askedBy}</p>
+      <p className="asked-by">
+        Asked By: <span className='asker'>{question.askedBy}</span>
+      </p>
     </div>
   );
 };

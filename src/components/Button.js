@@ -15,7 +15,7 @@ const Button = ({ text, color, onClick }) => {
 Button.defaultProps = {
   text: "Button",
   color: "pink",
-  onClick: () => { console.log('no onClick') },
+  onClick: () => { console.log('no button onClick') },
 };
 
 Button.propTypes = {
