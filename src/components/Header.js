@@ -1,21 +1,19 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-const Header = ({title}) => {
-    return (
-      <header>
-        <h1>
-          {title}
-        </h1>
-      </header>
-    );
-}
+const Header = ({ title }) => {
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
+};
 
 Header.defaultProps = {
-    title: 'Q and A'
-}
+  title: 'Q and A',
+};
 
 Header.propTypes = {
-    title: PropTypes.string
-}
+  title: PropTypes.string,
+};
 
-export default Header
+export default Header;

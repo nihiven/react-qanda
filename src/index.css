@@ -61,19 +61,17 @@ body {
   cursor: pointer;
 }
 
-.question.reminder {
+.question.answered {
   border-left: 5px solid green;
 }
 
-.asked-by {
-  font-size: 0.9em;
-}
-
-.asker {
+.asked-by,
+.site-user {
   color: orangered;
 }
 
-.asker:hover {
+.asked-by:hover,
+.site-user:hover {
   text-decoration: underline;
 }
 
