@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "text": "Are we haing fun yet?",
+      "askedBy": "nihiven",
+      "id": 1,
+      "answered": true
+    },
+    {
+      "text": "What is up?",
+      "askedBy": "nihiven",
+      "id": 3,
+      "answered": false
+    },
+    {
+      "text": "Try me!",
+      "askedBy": "nihiven",
+      "id": 5,
+      "answered": false
+    }
+  ]
+}

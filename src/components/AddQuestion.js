@@ -8,14 +8,11 @@ const AddQuestion = ({ onAdd, user }) => {
 
   const onSubmit = (e) => {
     e.preventDefault(); // stops from submitting to a page
-
     if (!text) {
       alert('Please enter a question.');
       return;
     }
-
-    onAdd({ text, user });
-
+    onAdd({ text, askedBy });
     setText('');
   };
 
@@ -23,7 +20,7 @@ const AddQuestion = ({ onAdd, user }) => {
     <form className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
         <label>
-          Question from <span className='site-user'>{user}</span>
+          Question from <span className='site-user'>{askedBy}</span>:
         </label>
         <input
           type='text'
@@ -32,8 +29,12 @@ const AddQuestion = ({ onAdd, user }) => {
           onChange={(e) => setText(e.target.value)}
         />
       </div>
-
-      <input type='submit' value='Ask Question' className='btn btn-block' />
+      <input
+        type='submit'
+        value='Ask Question'
+        className='btn btn-block'
+        style={{ backgroundColor: 'green' }}
+      />
     </form>
   );
 };
