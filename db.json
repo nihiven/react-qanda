@@ -4,7 +4,7 @@
       "text": "Are we haing fun yet?",
       "askedBy": "nihiven",
       "id": 1,
-      "answered": true
+      "answered": false
     },
     {
       "text": "What is up?",
@@ -16,7 +16,12 @@
       "text": "Try me!",
       "askedBy": "nihiven",
       "id": 5,
-      "answered": false
+      "answered": true
+    },
+    {
+      "text": "Can you help me?",
+      "askedBy": "nihiven",
+      "id": 6
     }
   ]
 }
