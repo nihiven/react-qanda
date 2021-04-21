@@ -3,8 +3,6 @@ import { useState } from 'react';
 const AddQuestion = ({ onAdd, user }) => {
   const [text, setText] = useState('');
   const [askedBy, setAskedBy] = useState(user);
-  const [answeredBy, setAnsweredBy] = useState('');
-  const [answered, setAnswered] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault(); // stops from submitting to a page
